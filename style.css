@@ -1,76 +1,123 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, Arial, sans-serif;
-}
-
 body{
-    background:#f2f5f9;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
-}
 
-.container{
-    width:100%;
-    max-width:450px;
+background:#edf2f7;
+
+font-family:Poppins,sans-serif;
+
+display:flex;
+
+justify-content:center;
+
+padding:30px;
+
 }
 
 .card{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+width:420px;
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
 }
 
-.header{
-    background:#005BAC;
-    color:white;
-    text-align:center;
-    padding:25px;
+.top{
+
+background:#005BAC;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
+
 }
 
-.header h1{
-    font-size:24px;
-    margin-bottom:8px;
+.top h1{
+
+font-size:24px;
+
+margin-bottom:5px;
+
 }
 
-.header p{
-    font-size:14px;
-    opacity:.9;
+.photo{
+
+display:flex;
+
+justify-content:center;
+
+margin-top:-45px;
+
 }
 
-.body{
-    padding:25px;
+.photo img{
+
+width:110px;
+
+height:110px;
+
+border-radius:50%;
+
+border:5px solid white;
+
+background:white;
+
 }
 
-.row{
-    display:flex;
-    justify-content:space-between;
-    border-bottom:1px solid #eeeeee;
-    padding:12px 0;
+.verified{
+
+text-align:center;
+
+font-weight:600;
+
+color:green;
+
+margin-top:10px;
+
 }
 
-.row label{
-    font-weight:600;
-    color:#333;
-    width:45%;
+.details{
+
+padding:25px;
+
 }
 
-.row span{
-    width:55%;
-    text-align:right;
-    color:#555;
-    word-break:break-word;
+.item{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:12px 0;
+
+border-bottom:1px solid #eeeeee;
+
+}
+
+.label{
+
+font-weight:600;
+
+color:#444;
+
 }
 
 .footer{
-    background:#fafafa;
-    text-align:center;
-    padding:15px;
-    color:#777;
-    font-size:13px;
+
+background:#005BAC;
+
+color:white;
+
+text-align:center;
+
+padding:15px;
+
+font-size:13px;
+
 }
