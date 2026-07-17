@@ -25,7 +25,8 @@ fetch("employees.json")
         document.getElementById("id").textContent = emp.id;
         document.getElementById("department").textContent = emp.department;
         document.getElementById("designation").textContent = emp.designation;
-        document.getElementById("bloodGroup").textContent = emp.bloodGroup || "-";
+        document.getElementById("bloodGroup").innerHTML =
+`<span class="blood">${emp.bloodGroup || "-"}</span>`;
         document.getElementById("email").innerHTML =
 `<a href="mailto:${emp.email}">${emp.email}</a>`;
 
