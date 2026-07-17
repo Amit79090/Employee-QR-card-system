@@ -26,8 +26,11 @@ fetch("employees.json")
         document.getElementById("department").textContent = emp.department;
         document.getElementById("designation").textContent = emp.designation;
         document.getElementById("bloodGroup").textContent = emp.bloodGroup || "-";
-        document.getElementById("email").textContent = emp.email;
-        document.getElementById("mobile").textContent = emp.mobile;
+        document.getElementById("email").innerHTML =
+`<a href="mailto:${emp.email}">${emp.email}</a>`;
+
+document.getElementById("mobile").innerHTML =
+`<a href="tel:${emp.mobile}">${emp.mobile}</a>`;
         document.getElementById("emergency").textContent = emp.emergency;
 
     })
