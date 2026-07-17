@@ -3,62 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Employee Card</title>
+<title>Employee Digital Card</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="script.js" defer></script>
 
 </head>
 
 <body>
 
-<div class="container">
-
 <div class="card">
 
-<div class="header">
+<div class="top">
+
 <h1>MAITHON POWER LIMITED</h1>
-<p>Employee Information Card</p>
+
+<p>Employee Digital Identity Card</p>
+
 </div>
 
-<div class="body">
+<div class="photo">
 
-<div class="row">
-<label>Employee Name</label>
+<img id="photo" src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+
+</div>
+
+<div class="verified">
+
+✔ Verified Employee
+
+</div>
+
+<div class="details">
+
+<div class="item">
+<span class="label">Employee Name</span>
 <span id="name"></span>
 </div>
 
-<div class="row">
-<label>Employee ID</label>
+<div class="item">
+<span class="label">Employee ID</span>
 <span id="id"></span>
 </div>
 
-<div class="row">
-<label>Department</label>
+<div class="item">
+<span class="label">Department</span>
 <span id="department"></span>
 </div>
 
-<div class="row">
-<label>Designation</label>
+<div class="item">
+<span class="label">Designation</span>
 <span id="designation"></span>
 </div>
 
-<div class="row">
-<label>Blood Group</label>
+<div class="item">
+<span class="label">Blood Group</span>
 <span id="bloodGroup"></span>
 </div>
 
-<div class="row">
-<label>Email</label>
+<div class="item">
+<span class="label">Email</span>
 <span id="email"></span>
 </div>
 
-<div class="row">
-<label>Mobile</label>
+<div class="item">
+<span class="label">Mobile</span>
 <span id="mobile"></span>
 </div>
 
-<div class="row">
-<label>Emergency Contact</label>
+<div class="item">
+<span class="label">Emergency</span>
 <span id="emergency"></span>
 </div>
 
@@ -66,15 +84,11 @@
 
 <div class="footer">
 
-Powered by GitHub Pages
+Powered by Maithon Power Limited
 
 </div>
 
 </div>
-
-</div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
