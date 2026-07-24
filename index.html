@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Maithon Power Employee Digital Identity Card</title>
+<title>Employee Digital ID Card</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -25,229 +25,202 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <body>
 
+<div class="container">
+
 <div class="card">
 
-    <!-- Header -->
+<div class="header">
 
-    <div class="top">
+<img src="logo.png" class="logo">
 
-        <img src="logo.png"
-             class="logo"
-             alt="Maithon Power Logo"
-             onerror="this.style.display='none'">
+<h1>MAITHON POWER LIMITED</h1>
 
-        <h1>MAITHON POWER LIMITED</h1>
+<p>Employee Digital Identity Card</p>
 
-        <p>Employee Digital Identity Card</p>
+</div>
 
-    </div>
+<div class="profile">
 
-    <!-- Profile -->
+<img id="photo"
+src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
 
-    <div class="photo">
+<h2 id="name">Loading...</h2>
 
-        <img id="photo"
-        src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+<p id="designation">Loading...</p>
 
-    </div>
+<div class="verified">
 
-    <h2 id="name" class="employeeName"></h2>
+<i class="fa-solid fa-circle-check"></i>
 
-    <p id="designation" class="employeeDesignation"></p>
+VERIFIED EMPLOYEE
 
-    <div class="verified">
+</div>
 
-        <i class="fa-solid fa-circle-check"></i>
+</div>
 
-        VERIFIED EMPLOYEE
+<div class="section">
 
-    </div>
+<h3>
 
-    <!-- Employee Details -->
+<i class="fa-solid fa-id-card"></i>
 
-    <div class="sectionTitle">
+Employee Information
 
-        <i class="fa-solid fa-address-card"></i>
+</h3>
 
-        Employee Information
+<div class="info">
 
-    </div>
+<div class="row">
 
-    <div class="details">
+<div class="left">
 
-        <div class="item">
+<i class="fa-solid fa-id-badge"></i>
 
-            <div class="icon">
+Employee ID
 
-                <i class="fa-solid fa-id-card"></i>
+</div>
 
-            </div>
+<div class="right" id="id"></div>
 
-            <div>
+</div>
 
-                <span class="label">Employee ID</span>
+<div class="row">
 
-                <span id="id"></span>
+<div class="left">
 
-            </div>
+<i class="fa-solid fa-building"></i>
 
-        </div>
+Department
 
-        <div class="item">
+</div>
 
-            <div class="icon">
+<div class="right" id="department"></div>
 
-                <i class="fa-solid fa-building"></i>
+</div>
 
-            </div>
+<div class="row">
 
-            <div>
+<div class="left">
 
-                <span class="label">Department</span>
+<i class="fa-solid fa-briefcase"></i>
 
-                <span id="department"></span>
+Designation
 
-            </div>
+</div>
 
-        </div>
+<div class="right" id="designation2"></div>
 
-        <div class="item">
+</div>
 
-            <div class="icon">
+<div class="row">
 
-                <i class="fa-solid fa-briefcase"></i>
+<div class="left">
 
-            </div>
+<i class="fa-solid fa-droplet"></i>
 
-            <div>
+Blood Group
 
-                <span class="label">Designation</span>
+</div>
 
-                <span id="designation2"></span>
+<div class="right" id="bloodGroup"></div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-        <div class="item">
+</div>
 
-            <div class="icon">
+<div class="section">
 
-                <i class="fa-solid fa-droplet"></i>
+<h3>
 
-            </div>
+<i class="fa-solid fa-phone"></i>
 
-            <div>
+Contact Details
 
-                <span class="label">Blood Group</span>
+</h3>
 
-                <span id="bloodGroup"></span>
+<div class="info">
 
-            </div>
+<div class="row">
 
-        </div>
+<div class="left">
 
-    </div>
+<i class="fa-solid fa-envelope"></i>
 
-    <!-- Contact -->
+Email
 
-    <div class="sectionTitle">
+</div>
 
-        <i class="fa-solid fa-phone"></i>
+<div class="right" id="email"></div>
 
-        Contact Details
+</div>
 
-    </div>
+<div class="row">
 
-    <div class="details">
+<div class="left">
 
-        <div class="item">
+<i class="fa-solid fa-mobile-screen"></i>
 
-            <div class="icon">
+Mobile
 
-                <i class="fa-solid fa-envelope"></i>
+</div>
 
-            </div>
+<div class="right" id="mobile"></div>
 
-            <div>
+</div>
 
-                <span class="label">Email</span>
+<div class="row emergency">
 
-                <span id="email"></span>
+<div class="left">
 
-            </div>
+<i class="fa-solid fa-triangle-exclamation"></i>
 
-        </div>
+Emergency
 
-        <div class="item">
+</div>
 
-            <div class="icon">
+<div class="right" id="emergency"></div>
 
-                <i class="fa-solid fa-mobile-screen"></i>
+</div>
 
-            </div>
+</div>
 
-            <div>
+</div>
 
-                <span class="label">Mobile</span>
+<div class="buttons">
 
-                <span id="mobile"></span>
+<a id="callButton">
 
-            </div>
+<i class="fa-solid fa-phone"></i>
 
-        </div>
+Call
 
-        <div class="item emergency">
+</a>
 
-            <div class="icon">
+<a id="mailButton">
 
-                <i class="fa-solid fa-triangle-exclamation"></i>
+<i class="fa-solid fa-envelope"></i>
 
-            </div>
+Email
 
-            <div>
+</a>
 
-                <span class="label">Emergency Contact</span>
+</div>
 
-                <span id="emergency"></span>
+<div class="footer">
 
-            </div>
+<i class="fa-solid fa-shield-halved"></i>
 
-        </div>
+QR Verified Employee
 
-    </div>
+<br><br>
 
-    <!-- Buttons -->
+Powered by Maithon Power Limited
 
-    <div class="buttons">
+</div>
 
-        <a id="callButton" href="javascript:void(0)">
-            <i class="fa-solid fa-phone"></i>
-            Call
-        </a>
-
-        <a id="mailButton" href="javascript:void(0)">
-            <i class="fa-solid fa-envelope"></i>
-            Email
-        </a>
-
-    </div>
-
-    <!-- Footer -->
-
-    <div class="footer">
-
-        <i class="fa-solid fa-shield-halved"></i>
-
-        QR Verified Employee
-
-        <br><br>
-
-        This digital identity card is generated by
-
-        <strong>Maithon Power Limited</strong>
-
-    </div>
+</div>
 
 </div>
 
