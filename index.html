@@ -4,87 +4,121 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Employee Digital ID Card</title>
+<title>Maithon Power Digital ID Card</title>
+
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<script src="script.js" defer></script>
 
 </head>
 
+
 <body>
+
 
 <div class="container">
 
+
 <div class="card">
+
+
+<!-- HEADER -->
 
 <div class="header">
 
-<img src="logo.png" class="logo">
 
-<h1>MAITHON POWER LIMITED</h1>
+<img class="logo" src="images/logo.png">
 
-<p>Employee Digital Identity Card</p>
+
+<h1>Maithon Power Limited</h1>
+
+
+<p>Digital Employee Identity Card</p>
+
 
 </div>
+
+
+
+
+<!-- PROFILE -->
+
 
 <div class="profile">
 
-<img id="photo"
-src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
 
-<h2 id="name">Loading...</h2>
+<img id="photo" src="">
 
-<p id="designation">Loading...</p>
 
-<div class="verified">
+<h2 id="name"></h2>
 
-<i class="fa-solid fa-circle-check"></i>
 
-VERIFIED EMPLOYEE
+<p id="designation"></p>
+
+
+<span class="verified">
+
+✔ Verified Employee
+
+</span>
+
 
 </div>
 
-</div>
+
+
+
+
+
+<!-- EMPLOYEE DETAILS -->
+
 
 <div class="section">
+
 
 <h3>
 
 <i class="fa-solid fa-id-card"></i>
 
-Employee Information
+Employee Details
 
 </h3>
 
+
+
 <div class="info">
+
+
 
 <div class="row">
 
+
 <div class="left">
 
-<i class="fa-solid fa-id-badge"></i>
+<i class="fa-solid fa-hashtag"></i>
 
 Employee ID
 
 </div>
 
-<div class="right" id="id"></div>
+
+<div class="right" id="employeeID"></div>
+
 
 </div>
 
+
+
+
 <div class="row">
+
 
 <div class="left">
 
@@ -94,25 +128,17 @@ Department
 
 </div>
 
+
 <div class="right" id="department"></div>
 
+
 </div>
+
+
+
 
 <div class="row">
 
-<div class="left">
-
-<i class="fa-solid fa-briefcase"></i>
-
-Designation
-
-</div>
-
-<div class="right" id="designation2"></div>
-
-</div>
-
-<div class="row">
 
 <div class="left">
 
@@ -122,15 +148,33 @@ Blood Group
 
 </div>
 
-<div class="right" id="bloodGroup"></div>
+
+<div class="right">
+
+<span class="blood" id="blood"></span>
 
 </div>
 
-</div>
 
 </div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- CONTACT DETAILS -->
+
 
 <div class="section">
+
 
 <h3>
 
@@ -140,9 +184,14 @@ Contact Details
 
 </h3>
 
+
+
 <div class="info">
 
+
+
 <div class="row">
+
 
 <div class="left">
 
@@ -152,11 +201,18 @@ Email
 
 </div>
 
+
 <div class="right" id="email"></div>
+
 
 </div>
 
+
+
+
+
 <div class="row">
+
 
 <div class="left">
 
@@ -166,11 +222,18 @@ Mobile
 
 </div>
 
+
 <div class="right" id="mobile"></div>
+
 
 </div>
 
+
+
+
+
 <div class="row emergency">
+
 
 <div class="left">
 
@@ -180,50 +243,101 @@ Emergency
 
 </div>
 
+
 <div class="right" id="emergency"></div>
 
-</div>
 
 </div>
 
+
+
+
 </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- BUTTONS -->
+
 
 <div class="buttons">
 
+
 <a id="callButton">
+
 
 <i class="fa-solid fa-phone"></i>
 
 Call
 
+
 </a>
 
+
+
 <a id="mailButton">
+
 
 <i class="fa-solid fa-envelope"></i>
 
 Email
 
+
 </a>
 
+
 </div>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
 
 <div class="footer">
 
+
 <i class="fa-solid fa-shield-halved"></i>
+
 
 QR Verified Employee
 
+
 <br><br>
+
 
 Powered by Maithon Power Limited
 
-</div>
+
 
 </div>
 
+
+
 </div>
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
 
 </body>
+
 
 </html>
