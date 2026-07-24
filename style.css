@@ -11,7 +11,7 @@ font-family:'Poppins',sans-serif;
 
 body{
 
-background:#edf2f7;
+background:linear-gradient(135deg,#eef4ff,#f8fbff);
 
 display:flex;
 
@@ -22,6 +22,8 @@ align-items:center;
 min-height:100vh;
 
 padding:30px;
+
+font-family:'Poppins',sans-serif;
 
 }
 
@@ -41,13 +43,15 @@ width:100%;
 
 max-width:430px;
 
-background:white;
+background:#ffffff;
 
-border-radius:22px;
+border-radius:25px;
 
 overflow:hidden;
 
-box-shadow:0 20px 45px rgba(0,0,0,.18);
+box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+transition:.3s;
 
 }
 
@@ -55,13 +59,14 @@ box-shadow:0 20px 45px rgba(0,0,0,.18);
 
 .header{
 
-background:linear-gradient(135deg,#005BAC,#003A75);
+background:
+linear-gradient(135deg,#005BAC,#002b55);
 
 color:white;
 
 text-align:center;
 
-padding:30px 20px 60px;
+padding:35px 20px 90px;
 
 position:relative;
 
@@ -69,19 +74,21 @@ position:relative;
 
 .logo{
 
-width:75px;
+width:85px;
 
-height:75px;
+height:85px;
 
 background:white;
 
 border-radius:50%;
 
-padding:8px;
+padding:10px;
 
 object-fit:contain;
 
-margin-bottom:10px;
+margin-bottom:12px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
 
 }
 
@@ -123,17 +130,17 @@ z-index:2;
 
 .profile img{
 
-width:120px;
+width:130px;
 
-height:120px;
+height:130px;
 
 border-radius:50%;
 
-border:5px solid white;
+border:6px solid white;
 
 object-fit:cover;
 
-box-shadow:0 10px 30px rgba(0,0,0,.20);
+box-shadow:0 12px 35px rgba(0,0,0,.25);
 
 background:white;
 
