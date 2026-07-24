@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Employee Digital ID Card</title>
+<title>Employee Digital Identity Card</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <script src="script.js" defer></script>
 
@@ -29,9 +29,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <div class="card">
 
+<!-- ================= HEADER ================= -->
+
 <div class="header">
 
+<div class="company">
+
 <img src="logo.png" class="logo">
+
+<div>
 
 <h1>MAITHON POWER LIMITED</h1>
 
@@ -39,154 +45,162 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </div>
 
+</div>
+
+</div>
+
+<!-- ================= PROFILE ================= -->
+
 <div class="profile">
+
+<div class="photo">
 
 <img id="photo"
 src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+
+</div>
 
 <h2 id="name">Loading...</h2>
 
 <p id="designation">Loading...</p>
 
-<div class="verified">
+<div class="verify">
 
 <i class="fa-solid fa-circle-check"></i>
 
-VERIFIED EMPLOYEE
+Verified Employee
 
 </div>
 
 </div>
 
-<div class="section">
+<!-- ================= EMPLOYEE ================= -->
 
-<h3>
+<div class="sectionTitle">
 
 <i class="fa-solid fa-id-card"></i>
 
 Employee Information
 
-</h3>
+</div>
 
-<div class="info">
+<div class="infoCard">
 
-<div class="row">
-
-<div class="left">
+<div class="item">
 
 <i class="fa-solid fa-id-badge"></i>
 
-Employee ID
+<div>
+
+<label>Employee ID</label>
+
+<span id="id"></span>
 
 </div>
 
-<div class="right" id="id"></div>
-
 </div>
 
-<div class="row">
-
-<div class="left">
+<div class="item">
 
 <i class="fa-solid fa-building"></i>
 
-Department
+<div>
+
+<label>Department</label>
+
+<span id="department"></span>
 
 </div>
 
-<div class="right" id="department"></div>
-
 </div>
 
-<div class="row">
-
-<div class="left">
+<div class="item">
 
 <i class="fa-solid fa-briefcase"></i>
 
-Designation
+<div>
+
+<label>Designation</label>
+
+<span id="designation2"></span>
 
 </div>
 
-<div class="right" id="designation2"></div>
-
 </div>
 
-<div class="row">
-
-<div class="left">
+<div class="item">
 
 <i class="fa-solid fa-droplet"></i>
 
-Blood Group
+<div>
+
+<label>Blood Group</label>
+
+<span id="bloodGroup"></span>
 
 </div>
 
-<div class="right" id="bloodGroup"></div>
-
 </div>
 
 </div>
 
-</div>
+<!-- ================= CONTACT ================= -->
 
-<div class="section">
-
-<h3>
+<div class="sectionTitle">
 
 <i class="fa-solid fa-phone"></i>
 
 Contact Details
 
-</h3>
+</div>
 
-<div class="info">
+<div class="infoCard">
 
-<div class="row">
-
-<div class="left">
+<div class="item">
 
 <i class="fa-solid fa-envelope"></i>
 
-Email
+<div>
+
+<label>Email</label>
+
+<span id="email"></span>
 
 </div>
 
-<div class="right" id="email"></div>
-
 </div>
 
-<div class="row">
-
-<div class="left">
+<div class="item">
 
 <i class="fa-solid fa-mobile-screen"></i>
 
-Mobile
+<div>
+
+<label>Mobile</label>
+
+<span id="mobile"></span>
 
 </div>
 
-<div class="right" id="mobile"></div>
-
 </div>
 
-<div class="row emergency">
-
-<div class="left">
+<div class="item emergency">
 
 <i class="fa-solid fa-triangle-exclamation"></i>
 
-Emergency
+<div>
+
+<label>Emergency Contact</label>
+
+<span id="emergency"></span>
 
 </div>
 
-<div class="right" id="emergency"></div>
-
 </div>
 
 </div>
 
-</div>
+<!-- ================= BUTTONS ================= -->
 
 <div class="buttons">
 
@@ -206,7 +220,17 @@ Email
 
 </a>
 
+<a id="whatsappButton">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
 </div>
+
+<!-- ================= FOOTER ================= -->
 
 <div class="footer">
 
@@ -214,7 +238,7 @@ Email
 
 QR Verified Employee
 
-<br><br>
+<br>
 
 Powered by Maithon Power Limited
 
