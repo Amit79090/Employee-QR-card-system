@@ -1,16 +1,73 @@
-// Read Employee ID from URL
+// ==========================================
+// MAITHON POWER LIMITED
+// Employee Digital Identity Card
+// ==========================================
+
+// Get Employee ID from QR URL
 const params = new URLSearchParams(window.location.search);
 const empId = params.get("id");
 
+// Check if Employee ID exists
+if (!empId) {
+
+    document.body.innerHTML = `
+    <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        font-family:Poppins,sans-serif;
+        background:#f5f7fa;
+    ">
+
+        <div style="
+            background:#fff;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.15);
+            text-align:center;
+            max-width:420px;
+        ">
+
+            <h1 style="color:#005BAC;">
+                MAITHON POWER LIMITED
+            </h1>
+
+            <h2 style="color:#d32f2f;">
+                Invalid QR Code
+            </h2>
+
+            <p>
+                Employee ID is missing from the QR Code.
+            </p>
+
+        </div>
+
+    </div>
+    `;
+
+    throw new Error("Employee ID missing.");
+}
+
 // Load Employee Data
 fetch("employees.json")
-.then(response => response.json())
+
+.then(response => {
+
+    if (!response.ok) {
+        throw new Error("Unable to load employees.json");
+    }
+
+    return response.json();
+
+})
+
 .then(data => {
 
-    // Find employee by ID
-    const emp = data.find(e => e.id == empId);
+    // Search Employee
+    const emp = data.find(e => e.id === empId);
 
-    // Employee not found
+    // Employee Not Found
     if (!emp) {
 
         document.body.innerHTML = `
@@ -29,14 +86,14 @@ fetch("employees.json")
                 border-radius:20px;
                 box-shadow:0 10px 30px rgba(0,0,0,.15);
                 text-align:center;
-                width:400px;
+                max-width:420px;
             ">
 
                 <h1 style="color:#005BAC;">
                     MAITHON POWER LIMITED
                 </h1>
 
-                <h2 style="color:red;">
+                <h2 style="color:#d32f2f;">
                     Employee Not Found
                 </h2>
 
@@ -50,33 +107,66 @@ fetch("employees.json")
         `;
 
         return;
+
     }
 
-    // Display Employee Details
+    // Change Browser Title
+    document.title = emp.name + " | Employee Card";
+
+    // Fill Details
 
     document.getElementById("name").textContent = emp.name;
 
     document.getElementById("id").textContent = emp.id;
 
-    document.getElementById("department").textContent = emp.department;
+    document.getElementById("department").textContent =
+        emp.department || "Not Available";
 
-    document.getElementById("designation").textContent = emp.designation;
+    document.getElementById("designation").textContent =
+        emp.designation || "Not Available";
 
-    document.getElementById("designation2").textContent = emp.designation;
-    
+    const designation2 = document.getElementById("designation2");
+
+    if (designation2) {
+        designation2.textContent = emp.designation || "Not Available";
+    }
+
     document.getElementById("bloodGroup").innerHTML =
-        `<span class="blood">${emp.bloodGroup || "-"}</span>`;
+        `<span class="blood">${emp.bloodGroup || "Not Available"}</span>`;
 
     document.getElementById("email").innerHTML =
-        `<a href="mailto:${emp.email}">${emp.email}</a>`;
+        `<a href="mailto:${emp.email}">
+            ${emp.email}
+        </a>`;
 
     document.getElementById("mobile").innerHTML =
-        `<a href="tel:${emp.mobile}">${emp.mobile}</a>`;
+        `<a href="tel:${emp.mobile}">
+            ${emp.mobile}
+        </a>`;
 
     document.getElementById("emergency").innerHTML =
-        `<a href="tel:${emp.emergency}">${emp.emergency}</a>`;
+        `<a href="tel:${emp.emergency}">
+            ${emp.emergency}
+        </a>`;
+
+    // Call Button
+
+    const callButton = document.getElementById("callButton");
+
+    if (callButton) {
+        callButton.href = "tel:" + emp.mobile;
+    }
+
+    // Email Button
+
+    const mailButton = document.getElementById("mailButton");
+
+    if (mailButton) {
+        mailButton.href = "mailto:" + emp.email;
+    }
 
 })
+
 .catch(error => {
 
     console.error(error);
@@ -97,14 +187,14 @@ fetch("employees.json")
             border-radius:20px;
             box-shadow:0 10px 30px rgba(0,0,0,.15);
             text-align:center;
-            width:420px;
+            max-width:420px;
         ">
 
             <h1 style="color:#005BAC;">
                 MAITHON POWER LIMITED
             </h1>
 
-            <h2 style="color:red;">
+            <h2 style="color:#d32f2f;">
                 Unable to Load Employee Data
             </h2>
 
