@@ -7,7 +7,8 @@
     "bloodGroup": "",
     "email": "guddu.khan@tatapower.com",
     "mobile": "9099915613",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/203102.jpg"
   },
   {
     "id": "200687",
@@ -17,7 +18,8 @@
     "bloodGroup": "",
     "email": "ravindraderla@tatapower.com",
     "mobile": "9972945356",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/200687.jpg"
   },
   {
     "id": "204243",
@@ -27,7 +29,8 @@
     "bloodGroup": "",
     "email": "manish@tatapower.com",
     "mobile": "9000748338",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/204243.jpg"
   },
   {
     "id": "204490",
@@ -37,7 +40,8 @@
     "bloodGroup": "",
     "email": "rajeshyadav@tatapower.com",
     "mobile": "9263632056",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/204490.jpg"
   },
   {
     "id": "204542",
@@ -47,7 +51,8 @@
     "bloodGroup": "",
     "email": "mukeshk@tatapower.com",
     "mobile": "9263635190",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/204542.jpg"
   },
   {
     "id": "204541",
@@ -57,7 +62,8 @@
     "bloodGroup": "B+",
     "email": "biplob.chatterjee@tatapower.com",
     "mobile": "9204857095",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/204541.jpg"
   },
   {
     "id": "206411",
@@ -67,7 +73,8 @@
     "bloodGroup": "",
     "email": "aman.kumar@tatapower.com",
     "mobile": "9122705484",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/206411.jpg"
   },
   {
     "id": "207728",
@@ -77,7 +84,8 @@
     "bloodGroup": "",
     "email": "sachinpandey@tatapower.com",
     "mobile": "9174666023",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/207728.jpg"
   },
   {
     "id": "209905",
@@ -87,7 +95,8 @@
     "bloodGroup": "",
     "email": "sahilshamim@tatapower.com",
     "mobile": "9471869812",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/209905.jpg"
   },
   {
     "id": "209904",
@@ -97,107 +106,117 @@
     "bloodGroup": "",
     "email": "amritkumar@tatapower.com",
     "mobile": "6203208212",
-    "emergency": "7070090545"
+    "emergency": "7070090545",
+    "image": "images/209904.jpg"
   },
   {
-    "id": "210627",
-    "name": "Snigdha Banerjee",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "",
-    "email": "snigdhabanerjee@tatapower.com",
-    "mobile": "9693203990",
-    "emergency": "7070090545"
+  "id": "210627",
+  "name": "Snigdha Banerjee",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "",
+  "email": "snigdhabanerjee@tatapower.com",
+  "mobile": "9693203990",
+  "emergency": "7070090545",
+  "image": "images/210627.jpg"
   },
   {
-    "id": "209907",
-    "name": "Mukesh Kumar Jr",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "",
-    "email": "mukeshk1@tatapower.com",
-    "mobile": "6205722301",
-    "emergency": "7070090545"
+  "id": "209907",
+  "name": "Mukesh Kumar Jr",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "",
+  "email": "mukeshk1@tatapower.com",
+  "mobile": "6205722301",
+  "emergency": "7070090545",
+  "image": "images/209907.jpg"
   },
   {
-    "id": "210714",
-    "name": "Amit Agarwal",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "O+",
-    "email": "amit.agarwal@tatapower.com",
-    "mobile": "7970790440",
-    "emergency": "7070090545"
-    "image":"images/210714.jpg"
+  "id": "210714",
+  "name": "Amit Agarwal",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "O+",
+  "email": "amit.agarwal@tatapower.com",
+  "mobile": "7970790440",
+  "emergency": "7070090545",
+  "image": "images/210714.jpg"
   },
   {
-    "id": "210286",
-    "name": "Piyush Singh",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "",
-    "email": "piyushsingh@tatapower.com",
-    "mobile": "9334304674",
-    "emergency": "7070090545"
+  "id": "210286",
+  "name": "Piyush Singh",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "",
+  "email": "piyushsingh@tatapower.com",
+  "mobile": "9334304674",
+  "emergency": "7070090545",
+  "image": "images/210286.jpg"
   },
   {
-    "id": "211938",
-    "name": "Nidhi Kulpati",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "A+",
-    "email": "nidhi.kulpati@tatapower.com",
-    "mobile": "9835709913",
-    "emergency": "7070090545"
+  "id": "211938",
+  "name": "Nidhi Kulpati",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "A+",
+  "email": "nidhi.kulpati@tatapower.com",
+  "mobile": "9835709913",
+  "emergency": "7070090545",
+  "image": "images/211938.jpg"
   },
   {
-    "id": "211928",
-    "name": "Manisha Kumari",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "",
-    "email": "manisha.kumari2@tatapower.com",
-    "mobile": "7667619945",
-    "emergency": "7070090545"
+  "id": "211928",
+  "name": "Manisha Kumari",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "",
+  "email": "manisha.kumari2@tatapower.com",
+  "mobile": "7667619945",
+  "emergency": "7070090545",
+  "image": "images/211928.jpg"
   },
   {
-    "id": "211937",
-    "name": "Kiran Kumari",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "O+",
-    "email": "kiran.kumari1@tatapower.com",
-    "mobile": "8789500746",
-    "emergency": "7070090545"
+  "id": "211937",
+  "name": "Kiran Kumari",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "O+",
+  "email": "kiran.kumari1@tatapower.com",
+  "mobile": "8789500746",
+  "emergency": "7070090545",
+  "image": "images/211937.jpg"
   },
   {
-    "id": "213308",
-    "name": "Amar Choudhary",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "DAT - Coal Handling Plant",
-    "bloodGroup": "",
-    "email": "amar.choudhary@tatapower.com",
-    "mobile": "6370069212",
-    "emergency": "7070090545"
+  "id": "213308",
+  "name": "Amar Choudhary",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "DAT - Coal Handling Plant",
+  "bloodGroup": "",
+  "email": "amar.choudhary@tatapower.com",
+  "mobile": "6370069212",
+  "emergency": "7070090545",
+  "image": "images/213308.jpg"
   },
   {
-    "id": "213479",
-    "name": "Priyanka Lakra",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "DAT - Coal Handling Plant",
-    "bloodGroup": "",
-    "email": "priyanka.lakra@tatapower.com",
-    "mobile": "7853847198",
-    "emergency": "7070090545"
+  "id": "213479",
+  "name": "Priyanka Lakra",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "DAT - Coal Handling Plant",
+  "bloodGroup": "",
+  "email": "priyanka.lakra@tatapower.com",
+  "mobile": "7853847198",
+  "emergency": "7070090545",
+  "image": "images/213479.jpg"
   },
   {
-    "id": "208892",
-    "name": "Sandeep Kumar Mahato",
-    "department": "Coal Handling Plant, Maithon",
-    "designation": "Lead Engineer - CHP",
-    "bloodGroup": "",
-    "email": "sandeepkumarmahto@tatapower.com",
-    "mobile": "9973360978",
-    "emergency": "7070090545"
-  }
-    ]
+  "id": "208892",
+  "name": "Sandeep Kumar Mahato",
+  "department": "Coal Handling Plant, Maithon",
+  "designation": "Lead Engineer - CHP",
+  "bloodGroup": "",
+  "email": "sandeepkumarmahto@tatapower.com",
+  "mobile": "9973360978",
+  "emergency": "7070090545",
+  "image": "images/208892.jpg"
+}
+]
