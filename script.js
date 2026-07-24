@@ -62,6 +62,8 @@ fetch("employees.json")
 
     document.getElementById("designation").textContent = emp.designation;
 
+    document.getElementById("designation2").textContent = emp.designation;
+    
     document.getElementById("bloodGroup").innerHTML =
         `<span class="blood">${emp.bloodGroup || "-"}</span>`;
 
