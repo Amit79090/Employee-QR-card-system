@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Employee Digital Card</title>
+
+<title>Maithon Power Employee Digital Identity Card</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <script src="script.js" defer></script>
 
@@ -18,79 +27,230 @@
 
 <div class="card">
 
-<div class="top">
+    <!-- Header -->
 
-<img src="logo.png" class="logo">
+    <div class="top">
 
-<h1>MAITHON POWER LIMITED</h1>
+        <img src="logo.png"
+             class="logo"
+             alt="Maithon Power Logo"
+             onerror="this.style.display='none'">
 
-<p>Employee Digital Identity Card</p>
+        <h1>MAITHON POWER LIMITED</h1>
 
-</div>
+        <p>Employee Digital Identity Card</p>
 
-<div class="photo">
+    </div>
 
-<img id="photo" src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+    <!-- Profile -->
 
-</div>
+    <div class="photo">
 
-<div class="verified">
+        <img id="photo"
+        src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
 
-✔ Verified Employee
+    </div>
 
-</div>
+    <h2 id="name" class="employeeName"></h2>
 
-<div class="details">
+    <p id="designation" class="employeeDesignation"></p>
 
-<div class="item">
-<span class="label">Employee Name</span>
-<span id="name"></span>
-</div>
+    <div class="verified">
 
-<div class="item">
-<span class="label">Employee ID</span>
-<span id="id"></span>
-</div>
+        <i class="fa-solid fa-circle-check"></i>
 
-<div class="item">
-<span class="label">Department</span>
-<span id="department"></span>
-</div>
+        VERIFIED EMPLOYEE
 
-<div class="item">
-<span class="label">Designation</span>
-<span id="designation"></span>
-</div>
+    </div>
 
-<div class="item">
-<span class="label">Blood Group</span>
-<span id="bloodGroup"></span>
-</div>
+    <!-- Employee Details -->
 
-<div class="item">
-<span class="label">Email</span>
-<span id="email"></span>
-</div>
+    <div class="sectionTitle">
 
-<div class="item">
-<span class="label">Mobile</span>
-<span id="mobile"></span>
-</div>
+        <i class="fa-solid fa-address-card"></i>
 
-<div class="item">
-<span class="label">Emergency</span>
-<span id="emergency"></span>
-</div>
+        Employee Information
 
-</div>
+    </div>
 
-<div class="footer">
+    <div class="details">
 
-Powered by Maithon Power Limited
+        <div class="item">
 
-</div>
+            <div class="icon">
+
+                <i class="fa-solid fa-id-card"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Employee ID</span>
+
+                <span id="id"></span>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-building"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Department</span>
+
+                <span id="department"></span>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Designation</span>
+
+                <span id="designation2"></span>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-droplet"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Blood Group</span>
+
+                <span id="bloodGroup"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+
+    <div class="sectionTitle">
+
+        <i class="fa-solid fa-phone"></i>
+
+        Contact Details
+
+    </div>
+
+    <div class="details">
+
+        <div class="item">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Email</span>
+
+                <span id="email"></span>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-mobile-screen"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Mobile</span>
+
+                <span id="mobile"></span>
+
+            </div>
+
+        </div>
+
+        <div class="item emergency">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+            <div>
+
+                <span class="label">Emergency Contact</span>
+
+                <span id="emergency"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="buttons">
+
+        <a id="callButton" href="javascript:void(0)">
+            <i class="fa-solid fa-phone"></i>
+            Call
+        </a>
+
+        <a id="mailButton" href="javascript:void(0)">
+            <i class="fa-solid fa-envelope"></i>
+            Email
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        QR Verified Employee
+
+        <br><br>
+
+        This digital identity card is generated by
+
+        <strong>Maithon Power Limited</strong>
+
+    </div>
 
 </div>
 
 </body>
+
 </html>
